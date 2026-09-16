@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Redundancy Removal System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Data Redundancy Removal System</h1>
+
+    {% if message %}
+        <h3>{{ message }}</h3>
+    {% endif %}
+
+    <form method="POST">
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone" required><br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
